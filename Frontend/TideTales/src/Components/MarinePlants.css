@@ -1,0 +1,133 @@
+/* MarinePlants.css */
+
+.marine-plants-list-container {
+     width:100%;/* Increased width for the container */
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.marine-plants-content {
+    position: relative;
+    z-index: 1;
+}
+
+.marine-plants-list-title {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    padding: 10px;
+    background: white;
+    font-family: 'Times New Roman';
+}
+
+.marine-plants-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Two cards per row */
+    gap: 20px;
+}
+
+.marine-plants-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.marine-plants-card:hover {
+    transform: translateY(-5px);
+}
+
+.marine-plants-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.marine-plants-details {
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.marine-plants-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.marine-plants-taxonomy {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.marine-plants-description {
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.marine-plants-habitat,
+.marine-plants-life-cycle,
+.marine-plants-ecological-role,
+.marine-plants-distribution,
+.marine-plants-size {
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.marine-invertebrates-search-input {
+    width: 100%;
+    max-width: 800px; /* Increased max-width for search input */
+    padding: 15px;
+    font-size: 1.6rem; /* Adjusted font size for better readability */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.marine-invertebrates-search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.marine-invertebrates-search-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem; /* Adjusted font size for better readability */
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.marine-invertebrates-search-button:hover {
+    background-color: #45a049;
+}

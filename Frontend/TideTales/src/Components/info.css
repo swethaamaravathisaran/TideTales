@@ -1,0 +1,115 @@
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-container {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-lg {
+  font-size: 1.2rem;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #1a365d; /* Darker shade of blue for hover effect */
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:shadow-outline:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Example focus outline */
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.transform {
+  transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 2.5rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+}

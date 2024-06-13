@@ -1,0 +1,59 @@
+/* Additional CSS for semi-transparent background */
+.bg-transparent-overlay {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the last value for transparency */
+  }
+  
+  /* Video background styling */
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  /* Container styling */
+  .contact-us-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  /* Form styling */
+  form {
+    max-width: 400px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  form button {
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+  }
+  
+  /* Social media icons */
+  .fa-lg {
+    font-size: 1.5rem;
+  }
+  
+  /* Back button styling */
+  .absolute.top-6.left-6 {
+    position: absolute;
+    top: 1.5rem; /* Adjust as needed */
+    left: 1.5rem; /* Adjust as needed */
+  }
+  

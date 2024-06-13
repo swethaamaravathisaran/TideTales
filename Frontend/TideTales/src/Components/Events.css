@@ -1,0 +1,95 @@
+.events-page {
+    background: url('https://img.freepik.com/free-photo/nature-landscape-with-black-sand-beach_23-2151380363.jpg?t=st=1717769780~exp=1717773380~hmac=4f37a4c9134adb35e315cff87d2246cb66fd225a4d431f9746718c6fe1604629&w=1380') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.events-container {
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* White background with slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    color: black; /* Change text color to black */
+    font-family: 'Roboto', sans-serif;
+    backdrop-filter: blur(10px); /* Adding backdrop blur effect */
+}
+
+.events-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black; /* Change text color to black */
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px;
+}
+
+.event-card {
+    background-color: rgba(255, 255, 255, 0.7); /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-40px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: black; /* Change text color to black */
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+.event-location,
+.event-dates,
+.event-description {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.event-website {
+    display: block;
+    margin-top: 10px;
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.event-website:hover {
+    text-decoration: underline;
+    color: #0c47b7;
+    cursor: pointer;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

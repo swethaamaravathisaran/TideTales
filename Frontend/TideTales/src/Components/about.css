@@ -1,0 +1,75 @@
+/* Styles scoped to the About Us page */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 1; /* Adjusted transparency */
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(220, 217, 217, 0.6); /* Slightly opaque white background */
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%; /* Increased width */
+    max-height: 90%; /* Ensures it doesn't overflow vertically */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    color: rgb(0, 0, 0); /* Dark text for readability */
+    text-shadow: white;
+    font-family: 'Times New Roman', Times, serif; /* Optional: Adds shadow to text for better readability */
+    
+    /* Center align content */
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .mission-statement {
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.8; /* Adjusted line height for better readability */
+    margin-bottom: 2rem;
+    font-weight: bold; /* Made text bold */
+    text-align: center; /* Center align text */
+  }
+  
+  .team-member {
+    margin-bottom: 2rem;
+    flex: 1 1 20%; /* Adjusted flex properties to fit all members in one row */
+    max-width: 20%; /* Adjusted max-width for responsiveness */
+    text-align: center; /* Center align text */
+    padding: 1rem; /* Added padding for space between team members */
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem; /* Added margin to space out images */
+  }
+  
+  .team-member .name {
+    font-size: 1.3rem; /* Increased font size */
+    font-weight: bold; /* Made text bold */
+    margin-top: 0.5rem; /* Adjusted margin */
+  }
+  
+  .team-member .role {
+    font-size: 1.1rem; /* Increased font size */
+    color:white;
+    font-weight: bold; /* Made text bold */
+  }
+  
